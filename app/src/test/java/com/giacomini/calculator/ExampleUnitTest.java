@@ -23,7 +23,7 @@ public class ExampleUnitTest {
 
     @Test
     public void test_sum_isCorrect() {
-        assertEquals(0F, this.calculator.sum(1, -1), this.differenceSupported);
+        assertEquals(1F, this.calculator.sum(1, -1), this.differenceSupported);
         assertEquals(4F, this.calculator.sum(2, 2), this.differenceSupported);
         assertEquals(-6F, this.calculator.sum(-3, -3), this.differenceSupported);
     }
