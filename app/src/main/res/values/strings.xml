@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Calculator</string>
+    <string name="calculator_result_text">Resultado:</string>
+    <string name="calculator_result_value">0</string>
+    <string name="calculator_number1_label">Número 1</string>
+    <string name="calculator_number2_label">Número 2</string>
+    <string name="calculator_sum_button">Somar</string>
+</resources>
