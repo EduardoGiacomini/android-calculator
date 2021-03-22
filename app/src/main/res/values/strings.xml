@@ -5,4 +5,5 @@
     <string name="calculator_number1_label">Número 1</string>
     <string name="calculator_number2_label">Número 2</string>
     <string name="calculator_sum_button">Somar</string>
+    <string name="calculator_subtract_button">Subtrair</string>
 </resources>

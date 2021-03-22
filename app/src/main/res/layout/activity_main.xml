@@ -74,5 +74,12 @@
             android:text="@string/calculator_sum_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:text="@string/calculator_subtract_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>

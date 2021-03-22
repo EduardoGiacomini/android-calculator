@@ -13,7 +13,7 @@ import com.giacomini.calculator.core.CalculatorImpl;
 public class MainActivity extends AppCompatActivity {
     private Calculator calculator;
 
-    private Button sumButton;
+    private Button sumButton, subtractButton;
     private EditText number1TextField;
     private EditText number2TextField;
     private TextView resultTextView;
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         this.calculator = new CalculatorImpl();
 
         this.sumButton = findViewById(R.id.sumButton);
+        this.subtractButton = findViewById(R.id.subtractButton);
         this.number1TextField = findViewById(R.id.number1TextField);
         this.number2TextField = findViewById(R.id.number2TextField);
         this.resultTextView = findViewById(R.id.resultValue);
@@ -35,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             double number2 = this.getNumberFromTextView(this.number2TextField);
             double sum = this.calculator.sum(number1, number2);
             this.setResultOnResultTextView(sum);
+        });
+
+        this.subtractButton.setOnClickListener(v -> {
+            double number1 = this.getNumberFromTextView(this.number1TextField);
+            double number2 = this.getNumberFromTextView(this.number2TextField);
+            double subtract = this.calculator.subtract(number1, number2);
+            this.setResultOnResultTextView(subtract);
         });
     }
 
