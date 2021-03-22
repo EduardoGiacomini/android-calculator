@@ -12,11 +12,11 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ExampleUnitTest {
+public class CalculatorUnitTest {
     private Calculator calculator;
     private final double differenceSupported;
 
-    public ExampleUnitTest() {
+    public CalculatorUnitTest() {
         this.calculator = new CalculatorImpl();
         this.differenceSupported = 0.001;
     }
@@ -26,5 +26,12 @@ public class ExampleUnitTest {
         assertEquals(0F, this.calculator.sum(1, -1), this.differenceSupported);
         assertEquals(4F, this.calculator.sum(2, 2), this.differenceSupported);
         assertEquals(-6F, this.calculator.sum(-3, -3), this.differenceSupported);
+    }
+
+    @Test
+    public void test_subtract_isCorrect() {
+        assertEquals(2F, this.calculator.subtract(1, -1), this.differenceSupported);
+        assertEquals(0F, this.calculator.subtract(2, 2), this.differenceSupported);
+        assertEquals(-6F, this.calculator.subtract(-3, 3), this.differenceSupported);
     }
 }
